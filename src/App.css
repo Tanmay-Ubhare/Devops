@@ -17,6 +17,9 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+.logo.vite:hover {
+  filter: drop-shadow(0 0 2em #ffcc00aa);
+}
 
 @keyframes logo-spin {
   from {
@@ -28,7 +31,11 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
+  a:nth-of-type(1) .logo.vite {
+    animation: logo-spin infinite 20s linear;
+  }
+
+  a:nth-of-type(2) .logo.react {
     animation: logo-spin infinite 20s linear;
   }
 }
